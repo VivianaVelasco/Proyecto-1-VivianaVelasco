@@ -1,0 +1,124 @@
+*{
+    font-family:'Lato', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-1:#606C38;
+    --color-2: #283618;
+    --color-3: #FEFAE0;
+    --color-4: #DDA15E;
+    --color-5: #BC6C25;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header"
+    "content content content"
+    "footer footer footer";
+    background-color: #FEFAE0;
+    margin: auto;
+}
+
+
+header{
+    grid-area: header;
+    background-color: #606C38;
+    text-align: center;
+    text-decoration-color: white;
+    text-indent: 5px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+}
+#perfil{
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    border: 0ch;
+    border-radius: 100%;
+    display: block;
+    
+}
+
+h2{
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-weight: 900;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    grid-area: content;
+    margin: auto;
+}
+
+.aboutme{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+#titulo{
+    text-align: initial;
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#botoncv{
+    
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-items: end;
+}
+#miparrafo{
+    background-color:#BC6C25;
+    justify-items: center;
+    justify-content: center;
+    align-self: stretch;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+.education{
+
+
+}
+
+.skills{
+
+
+}
+.langauge{
+
+}
+
+.mensaje{
+background-color: #DDA15E;
+display: flexbox;
+flex-direction: column;
+align-items: center;
+
+
+}
+.mapa{
+
+}
+
+footer{
+grid-area: footer;
+background-color: #BC6C25;
+color: white;
+justify-content: space-evenly;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+}
+
+
+
