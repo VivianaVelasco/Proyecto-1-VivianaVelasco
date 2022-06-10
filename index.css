@@ -30,6 +30,7 @@ header{
     text-decoration-color: white;
     text-indent: 5px;
     display: flex;
+
     flex-direction: column;
     align-self: center;
 
@@ -68,21 +69,19 @@ h2{
     grid-column-start: 1;
     grid-column-end: 3;
 }
+
 #botoncv{
-    
+    background-color: #BC6C25;
+    border: #606C38;
+    border-radius: 10%;
+    font-style: bold;
     grid-column-start: 3;
     grid-column-end: 4;
     justify-items: end;
 }
-#miparrafo{
-    background-color:#BC6C25;
-    justify-items: center;
-    justify-content: center;
-    align-self: stretch;
-    grid-column-start: 1;
-    grid-column-end: 4;
+#botoncv:hover{
+    background-color: #DDA15E;
 }
-
 
 .education{
 
