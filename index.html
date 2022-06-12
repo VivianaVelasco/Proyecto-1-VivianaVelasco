@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -19,67 +20,79 @@
         </p>
     </header>
     
-    <section class="content">
-        
-        <section class="aboutme">
-            <h2 id="titulo">Sobre mi:</h2>
-           <button type="submit" onclick="window.open('imagenes/cv.pdf')" id="botoncv">Descargar CV</button>
-                 
-            </form>
-            <audio controls>
-                <source src="imagenes/audio.ogg" type="audio/ogg">
-            </audio>
-            
-        </section>
-        <section class="education">
-            <h2>Educación:</h2>
-            <table class="education">
-                <tr class="education"><th class="education">Colegio</th><th class="education">Universidad</th></tr>
-                <tr><th class="education">Unidad Educativa Javier</th>
-                <th class="education" >Escuela Superior Politecnica del Litoral</th></tr>
+    <div class="content">
+        <div class="row">
+            <div class="aboutme"> 
+                <h2 id="titulo">Sobre mi:</h2>
+                <div>
+                    <button type="submit" onclick="window.open('imagenes/cv.pdf')" id="botoncv">Descargar CV</button>
+                      
+                </div>
                 
-            </table>
+                 
+                 <audio controls id="audiocv">
+                     <source src="imagenes/audio.ogg" type="audio/ogg">
+                 </audio>
+            </div>
             
-        </section>
-        <section id="skills">
-            <h2>Habilidades:</h2>
+            <div class="education">
+                <h2>Educación:</h2>
+                <table class="education">
+                    <tr class="education"><th class="education">Colegio</th><th class="education">Universidad</th></tr>
+                    <tr><th class="education">Unidad Educativa Javier</th>
+                    <th class="education" >Escuela Superior Politecnica del Litoral</th></tr>
+                    
+                </table>
+                
+            </div>
             
-            <ol class="skills">
-                <!--Que sean en casillas-->
-                <li class="skills">Python</li>
-                <li class="skills">Git</li>
-                <li class="skills">HTML</li>
-                <li class="skills">C</li>
-                <li class="skills">Java</li>
-                <li class="skills">CSS</li>
-            </ol>
+                <div id="skills" class="col">
+                    <h2> Habilidades:</h2>
+                    
+                    <ol class="skills">
+                        <!--Que sean en casillas-->
+                        <li class="skills">Python</li>
+                        <li class="skills">Git</li>
+                        <li class="skills">HTML</li>
+                        <li class="skills">C</li>
+                        <li class="skills">Java</li>
+                        <li class="skills">CSS</li>
+                    </ol>
+                    
+                </div>
+               
+                    <div class="language">
+                        <h2>Idiomas:</h2>
+                        <ol class="language">
+                            <li>Inglés B2</li>
+                            <li>Francés A2</li>
+                            <li>Español</li>
+                        </ol>
+                    </div>
+                
+                
             
-        </section>
-        <section class="language">
-            <h2>Idiomas:</h2>
-            <ol class="language">
-                <li>Inglés B2</li>
-                <li>Francés A2</li>
-                <li>Español</li>
-            </ol>
-        </section>
-        <section class="mensaje">
-            <h2>Mensaje</h2>
-            <label for="De">De:</label>
-            <input type="email" id="De" name="De"><br>
-            <label for="Tema">Tema:</label>
-            <input type="text" id="Tema" name="Tema"><br>
-            <label for="">Mensaje:</label><br>
-            <textarea name="texto" id="texto" cols="30" rows="10">Escriba su mensaje aquí.</textarea><br>
-            <input type="submit" value="Enviar">
-        </section>
-        <section class="mapa">
-            <h2>Mapa</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9164821677136!2d-80.0078672857309!3d-2.1853650378828715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73ff2ad1cd75%3A0xfd8886351f0cba3d!2sCostalmar%20Shopping!5e0!3m2!1ses!2sec!4v1654545137336!5m2!1ses!2sec" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-        </section>
+                <div class="mensaje">
+                    <h2>Mensaje</h2>
+                    <label for="De">De:</label>
+                    <input type="email" id="De" name="De"><br>
+                    <label for="Tema">Tema:</label>
+                    <input type="text" id="Tema" name="Tema"><br>
+                    <label for="">Mensaje:</label><br>
+                    <textarea name="texto" id="texto" cols="30" rows="10">Escriba su mensaje aquí.</textarea><br>
+                    <input type="submit" value="Enviar">
+                </div>
 
-    </section>
+                <div class="mapa">
+                    <h2>Mapa</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9164821677136!2d-80.0078672857309!3d-2.1853650378828715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73ff2ad1cd75%3A0xfd8886351f0cba3d!2sCostalmar%20Shopping!5e0!3m2!1ses!2sec!4v1654545137336!5m2!1ses!2sec" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+                </div>
+            
+            
+        </div>
+
+    </div>
 
     <footer>
         <a href="https://github.com/VivianaVelasco">

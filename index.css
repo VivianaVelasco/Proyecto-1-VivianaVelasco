@@ -21,6 +21,7 @@ body{
     "footer footer footer";
     background-color: #FEFAE0;
     margin: auto;
+
 }
 
 
@@ -68,23 +69,39 @@ header{
 
 
 h2{
+    margin-top: 10%;
     align-items: flex-start;
     justify-content: flex-start;
     font-weight: 900;
+
 }
 
 .content{
     display: flex;
     flex-direction: column;
     grid-area: content;
-    margin: auto;
+    margin: 20px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    
 }
+@media  screen and  (max-width:600px){
+    content{
+        display: grid;
+        grid-template-areas: "aboutme" "education" "skills" "language" "mensaje" "mapa";
+        justify-items: center;
+        align-self: center;
+        align-content: center;
+    }
+}
+
 
 .aboutme{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
 }
+
 #titulo{
     text-align: initial;
     
@@ -100,9 +117,16 @@ h2{
     grid-column-start: 3;
     grid-column-end: 4;
     justify-items: end;
+    display: inline-block;
+    box-sizing: border-box;
 }
 #botoncv:hover{
     background-color: #DDA15E;
+}
+#audiocv{
+    justify-items: end;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 #education{
@@ -110,6 +134,7 @@ h2{
 
 }
 table.education{
+    margin: 10px;
     border: 1px solid var(--color-2);
     text-align: center;
     
