@@ -1,5 +1,6 @@
 *{
     font-family:'Lato', sans-serif;
+    font-weight: bold;
     
     margin: 0;
     padding: 0;
@@ -29,21 +30,42 @@ header{
     text-align: center;
     text-decoration-color: white;
     text-indent: 5px;
-    display: flex;
-
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 0.5;
+    grid-template-columns: 0.5;
+    grid-template-areas: "perfil nombre"
+    "perfil texto";
     align-self: center;
+    align-items: center;
+    align-content: center;
 
 }
-#perfil{
+
+.nombre, .texto{
+    justify-content: flex-start;
+}
+.perfil{
     margin: 0 auto;
     height: 200px;
     width: 200px;
     border: 0ch;
     border-radius: 100%;
     display: block;
+    grid-area: perfil;
     
 }
+
+@media screen and  (max-width:600px){
+    header{
+        display: grid;
+        grid-template-areas: "perfil" "nombre" "texto";
+        justify-items: center;
+        align-self: center;
+        align-content: center;
+        
+    }
+}
+
 
 h2{
     align-items: flex-start;
@@ -83,18 +105,42 @@ h2{
     background-color: #DDA15E;
 }
 
-.education{
-
-
-}
-
-.skills{
-
+#education{
+    padding: auto;
 
 }
-.langauge{
-
+table.education{
+    border: 1px solid var(--color-2);
+    text-align: center;
+    
 }
+tr.education{
+    border: #283618;
+    color: #FEFAE0;
+    background-color: #283618;
+    border: 1px solid #283618;
+    border-collapse: collapse;
+}
+th.education{
+    border: 1px solid #283618;
+    border-collapse: collapse;
+}
+
+li.skills{
+    border: 1px solid #283618;
+    padding: 5;
+    background-color: #283618;
+    color: #FEFAE0;
+    text-align: center;
+    border-radius: 50px;
+    display:inline-block;
+}
+
+ol.language{
+    list-style:circle;
+    display: inline-block;
+}
+
 
 .mensaje{
 background-color: #DDA15E;
@@ -105,6 +151,7 @@ align-items: center;
 
 }
 .mapa{
+    padding: auto;
 
 }
 

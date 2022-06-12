@@ -12,14 +12,15 @@
 </head>
 <body>
     <header>
-        <img src="imagenes/perfil.jpeg" id="perfil">
-        <h1 style="text-align: center"> Viviana Velasco</h1>
-        <p style="text-align:center">Desarrolladora en FrontEnd <br><br>
+        <img src="imagenes/perfil.jpeg" class="perfil">
+        <h1 style="text-align: center" class="nombre"> Viviana Velasco</h1>
+        <p style="text-align:center" class="texto">Desarrolladora en FrontEnd <br><br>
         Guayaquil - Ecuador
         </p>
     </header>
     
     <section class="content">
+        
         <section class="aboutme">
             <h2 id="titulo">Sobre mi:</h2>
            <button type="submit" onclick="window.open('imagenes/cv.pdf')" id="botoncv">Descargar CV</button>
@@ -32,26 +33,31 @@
         </section>
         <section class="education">
             <h2>Educación:</h2>
-            <ol>
-                <li>Unidad Educativa Javier</li>
-                <li>Escuela Superior Politecnica del Litoral</li>
-            </ol>
+            <table class="education">
+                <tr class="education"><th class="education">Colegio</th><th class="education">Universidad</th></tr>
+                <tr><th class="education">Unidad Educativa Javier</th>
+                <th class="education" >Escuela Superior Politecnica del Litoral</th></tr>
+                
+            </table>
+            
         </section>
-        <section class="skills">
+        <section id="skills">
             <h2>Habilidades:</h2>
-            <ol>
-                <!--Que sean en casillas-->>
-                <li>Python</li>
-                <li>Git</li>
-                <li>HTML</li>
-                <li>C</li>
-                <li>Java</li>
-                <li>CSS</li>
+            
+            <ol class="skills">
+                <!--Que sean en casillas-->
+                <li class="skills">Python</li>
+                <li class="skills">Git</li>
+                <li class="skills">HTML</li>
+                <li class="skills">C</li>
+                <li class="skills">Java</li>
+                <li class="skills">CSS</li>
             </ol>
+            
         </section>
         <section class="language">
             <h2>Idiomas:</h2>
-            <ol>
+            <ol class="language">
                 <li>Inglés B2</li>
                 <li>Francés A2</li>
                 <li>Español</li>
