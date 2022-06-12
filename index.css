@@ -85,15 +85,6 @@ h2{
     justify-content: space-evenly;
     
 }
-@media  screen and  (max-width:600px){
-    content{
-        display: grid;
-        grid-template-areas: "aboutme" "education" "skills" "language" "mensaje" "mapa";
-        justify-items: center;
-        align-self: center;
-        align-content: center;
-    }
-}
 
 
 .aboutme{
@@ -134,9 +125,12 @@ h2{
 
 }
 table.education{
-    margin: 10px;
+    
+    margin: 1rem;
+    padding: 1rem;
     border: 1px solid var(--color-2);
     text-align: center;
+
     
 }
 tr.education{
@@ -149,6 +143,7 @@ tr.education{
 th.education{
     border: 1px solid #283618;
     border-collapse: collapse;
+    text-align: center;
 }
 
 li.skills{
