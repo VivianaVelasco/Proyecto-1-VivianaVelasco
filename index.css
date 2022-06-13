@@ -1,31 +1,35 @@
-*{
-    font-family:'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
-    
+
     margin: 0;
     padding: 0;
 }
-:root{
-    --color-1:#606C38;
+
+:root {
+    --color-1: #606C38;
     --color-2: #283618;
     --color-3: #FEFAE0;
     --color-4: #DDA15E;
     --color-5: #BC6C25;
 }
-body{
+
+body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "header header header"
-    "content content content"
-    "footer footer footer";
+        "content content content"
+        "footer footer footer";
     background-color: #FEFAE0;
     margin: auto;
 
 }
 
 
-header{
+header {
     grid-area: header;
     background-color: #606C38;
     text-align: center;
@@ -35,17 +39,20 @@ header{
     grid-template-rows: 0.5;
     grid-template-columns: 0.5;
     grid-template-areas: "perfil nombre"
-    "perfil texto";
+        "perfil texto";
     align-self: center;
     align-items: center;
     align-content: center;
+    color: white;
 
 }
 
-.nombre, .texto{
+.nombre,
+.texto {
     justify-content: flex-start;
 }
-.perfil{
+
+.perfil {
     margin: 0 auto;
     height: 200px;
     width: 200px;
@@ -53,22 +60,10 @@ header{
     border-radius: 100%;
     display: block;
     grid-area: perfil;
-    
+
 }
 
-@media screen and  (max-width:600px){
-    header{
-        display: grid;
-        grid-template-areas: "perfil" "nombre" "texto";
-        justify-items: center;
-        align-self: center;
-        align-content: center;
-        
-    }
-}
-
-
-h2{
+h2 {
     margin-top: 10%;
     align-items: flex-start;
     justify-content: flex-start;
@@ -76,33 +71,65 @@ h2{
 
 }
 
-.content{
+.content {
+    grid-area: content;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
-    grid-area: content;
-    margin: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    gap: 25px;
     justify-content: space-evenly;
-    
+    align-items: center;
 }
 
-
-.aboutme{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+.aboutme {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto
 }
 
-#titulo{
-    text-align: initial;
-    
-    grid-column-start: 1;
-    grid-column-end: 3;
+audio {
+    margin: 0 auto;
 }
 
-#botoncv{
+.informacion {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row {
+    max-width: 75ch;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.skills_box {
+    color: var(--color-3);
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: var(--color-2);
+    border-radius: 9999px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.25rem 0.5rem 0.2rem 0rem;
+    line-height: 1.25rem;
+    border-width: 1px; 
+}
+
+.skills_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.language ol {
+    list-style: circle;
+    display: inline-block;
+}
+
+#botoncv {
     background-color: #BC6C25;
     border: #606C38;
     border-radius: 10%;
@@ -110,83 +137,114 @@ h2{
     justify-items: end;
     display: inline-block;
     box-sizing: border-box;
+    color: #FEFAE0;
 }
-#botoncv:hover{
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botoncv:hover {
     background-color: #DDA15E;
 }
-#audiocv{
-    justify-items: center;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
 
-#education{
-    padding: auto;
-
-}
-table.education{
-    
+table.education {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid var(--color-2);
     text-align: center;
-
-    
 }
-tr.education{
+
+tr.education {
     border: #283618;
     color: #FEFAE0;
     background-color: #283618;
     border: 1px solid #283618;
     border-collapse: collapse;
 }
-th.education{
+
+th.education {
     border: 1px solid #283618;
     border-collapse: collapse;
     text-align: center;
 }
 
-li.skills{
-    border: 1px solid #283618;
-    padding: 5;
-    background-color: #283618;
-    color: #FEFAE0;
-    text-align: center;
-    border-radius: 50px;
-    display:inline-block;
+form {
+    background-color: #DDA15E;
+    padding: 10px;
+    gap: 5px;
+    margin: 0 auto;
 }
 
-ol.language{
-    list-style:circle;
-    display: inline-block;
+.cuadrado {
+    display: flex;
+    align-items: center;
 }
 
-
-.mensaje{
-background-color: #DDA15E;
-display: flexbox;
-flex-direction: column;
-align-items: center;
-
-
-}
-.mapa{
-    padding: auto;
-    align-content: center;
-
-
+input {
+    width: 90%;
+    margin: 5px;
 }
 
-footer{
-grid-area: footer;
-background-color: #BC6C25;
-color: white;
-justify-content: space-evenly;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-
+label {
+    width: 10%;
 }
 
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    height: 100px;
+}
 
+input[type=submit] {
+    width: 100px;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color: var(--color-5);
+    color: var(--color-3);
+    font-weight: bolder;
+}
 
+#archivo_media {
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    width: 400px;
+}
+
+audio {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #BC6C25;
+    color: white;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:767px) {
+    header {
+        display: grid;
+        grid-template-areas: "perfil""nombre""texto";
+        justify-items: center;
+        align-self: center;
+        align-content: center;
+
+    }
+
+    #archivo_media {
+        width: auto;
+        height: 200px;
+    }
+
+    
+}

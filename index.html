@@ -1,111 +1,150 @@
 <html lang="en">
-<head>
+  <head>
     <title>CV Viviana Velasco</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximun-scale=1"
+    />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header>
-        <img src="imagenes/perfil.jpeg" class="perfil">
-        <h1 style="text-align: center" class="nombre"> Viviana Velasco</h1>
-        <p style="text-align:center" class="texto">Desarrolladora en FrontEnd <br><br>
+      <img src="imagenes/perfil.jpeg" class="perfil" />
+      <h1 style="text-align: center" class="nombre">Viviana Velasco</h1>
+      <p style="text-align: center" class="texto">
+        Desarrolladora en FrontEnd <br /><br />
         Guayaquil - Ecuador
-        </p>
+      </p>
     </header>
-    
-    <div class="content">
-       
-            <div class="aboutme"> 
-                <h2 id="titulo">Sobre mi:</h2>
-                <div>
-                    <button type="submit" onclick="window.open('imagenes/cv.pdf')" id="botoncv">Descargar CV</button>
-                      
-                </div>
-                
-                 
-                 <audio controls id="audiocv">
-                     <source src="imagenes/audio.ogg" type="audio/ogg">
-                 </audio>
-            </div>
-            
-            <div class="education">
-                <h2>Educación:</h2>
-                <table class="education">
-                    <tr class="education"><th class="education">Colegio</th><th class="education">Universidad</th></tr>
-                    <tr><th class="education">Unidad Educativa Javier</th>
-                    <th class="education" >Escuela Superior Politecnica del Litoral</th></tr>
-                    
-                </table>
-                
-            </div>
-            
-                <div id="skills" class="col">
-                    <h2> Habilidades:</h2>
-                    
-                    <ol class="skills">
-                        <!--Que sean en casillas-->
-                        <li class="skills">Python</li>
-                        <li class="skills">Git</li>
-                        <li class="skills">HTML</li>
-                        <li class="skills">C</li>
-                        <li class="skills">Java</li>
-                        <li class="skills">CSS</li>
-                    </ol>
-                    
-                </div>
-               
-                    <div class="language">
-                        <h2>Idiomas:</h2>
-                        <ol class="language">
-                            <li>Inglés B2</li>
-                            <li>Francés A2</li>
-                            <li>Español</li>
-                        </ol>
-                    </div>
-                
-                
-            
-                <div class="mensaje">
-                    <h2>Mensaje</h2>
-                    <label for="De">De:</label>
-                    <input type="email" id="De" name="De"><br>
-                    <label for="Tema">Tema:</label>
-                    <input type="text" id="Tema" name="Tema"><br>
-                    <label for="">Mensaje:</label><br>
-                    <textarea name="texto" id="texto" cols="30" rows="10">Escriba su mensaje aquí.</textarea><br>
-                    <input type="submit" value="Enviar">
-                </div>
 
-                <div class="mapa">
-                    <h2>Mapa</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9164821677136!2d-80.0078672857309!3d-2.1853650378828715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73ff2ad1cd75%3A0xfd8886351f0cba3d!2sCostalmar%20Shopping!5e0!3m2!1ses!2sec!4v1654545137336!5m2!1ses!2sec" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-                </div>
-            
-            
+    <section class="content">
+      <div class="row">
+        <div class="aboutme">
+          <h2 id="titulo">Sobre mi:</h2>
+          <button
+            type="submit"
+            onclick="window.open('imagenes/cv.pdf')"
+            id="botoncv"
+          >
+            Descargar CV
+          </button>
+        </div>
 
-    </div>
+        <audio controls>
+          <source src="imagenes/audio.ogg" type="audio/ogg" />
+        </audio>
+
+        <div class="education">
+          <h2>Educación:</h2>
+          <table class="education">
+            <tr class="education">
+              <th class="education">Colegio</th>
+              <th class="education">Universidad</th>
+            </tr>
+            <tr>
+              <th class="education">Unidad Educativa Javier</th>
+              <th class="education">
+                Escuela Superior Politecnica del Litoral
+              </th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="informacion">
+          <div class="skills">
+            <h2>Habilidades:</h2>
+            <ol class="skills_container">
+              <!--Que sean en casillas-->
+              <li class="skills_box">Python</li>
+              <li class="skills_box">Git</li>
+              <li class="skills_box">HTML</li>
+              <li class="skills_box">C</li>
+              <li class="skills_box">Java</li>
+              <li class="skills_box">CSS</li>
+            </ol>
+          </div>
+          <div class="language">
+            <h2>Idiomas:</h2>
+            <ol>
+              <li>Inglés B2</li>
+              <li>Francés A2</li>
+              <li>Español</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="mensaje">
+          <h2>Mensaje:</h2>
+          <form>
+            <div class="cuadrado">
+              <label for="De">De: </label>
+              <input type="email" id="De" name="De" />
+            </div>
+
+            <div class="cuadrado">
+              <label for="Tema">Tema: </label>
+              <input type="text" id="Tema" name="Tema" />
+            </div>
+            <label for="">Mensaje: </label>
+            <textarea
+              name="texto"
+              id="texto"
+              cols="30"
+              rows="10"
+              placeholder="Escriba su mensaje aquí."
+            >
+            </textarea>
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+
+        <div class="mapa">
+          <h2>Mapa</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9164821677136!2d-80.0078672857309!3d-2.1853650378828715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73ff2ad1cd75%3A0xfd8886351f0cba3d!2sCostalmar%20Shopping!5e0!3m2!1ses!2sec!4v1654545137336!5m2!1ses!2sec"
+            id="archivo_media"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
     <footer>
-        <a href="https://github.com/VivianaVelasco">
-            <img src="imagenes/github.png" width="40" height="40">
-        </a>
-        <a href="https://www.facebook.com/vanessaviviana.velascoquispe">
-            <img src="imagenes/facebook.png" width="40" height="40" >
-        </a>
-        
-        <img src="imagenes/correo.png" width="40" height="40" value="vanessavela@gmail.com">
-        <img src="imagenes/telefono.png" width="40" height="40" value="+593990023877" >
-        
-        
-        
+      <a href="https://github.com/VivianaVelasco">
+        <img src="imagenes/github.png" width="40" height="40" />
+      </a>
+      <a href="https://www.facebook.com/vanessaviviana.velascoquispe">
+        <img src="imagenes/facebook.png" width="40" height="40" />
+      </a>
+
+      <img
+        src="imagenes/correo.png"
+        width="40"
+        height="40"
+        value="vanessavela@gmail.com"
+      />
+      <img
+        src="imagenes/telefono.png"
+        width="40"
+        height="40"
+        value="+593990023877"
+      />
     </footer>
-</body>
+  </body>
 </html>
