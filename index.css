@@ -81,7 +81,9 @@ h2{
     flex-direction: column;
     grid-area: content;
     margin: 20px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 25px;
     justify-content: space-evenly;
     
 }
@@ -105,8 +107,6 @@ h2{
     border: #606C38;
     border-radius: 10%;
     font-style: bold;
-    grid-column-start: 3;
-    grid-column-end: 4;
     justify-items: end;
     display: inline-block;
     box-sizing: border-box;
@@ -115,7 +115,7 @@ h2{
     background-color: #DDA15E;
 }
 #audiocv{
-    justify-items: end;
+    justify-items: center;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -172,6 +172,8 @@ align-items: center;
 }
 .mapa{
     padding: auto;
+    align-content: center;
+
 
 }
 
