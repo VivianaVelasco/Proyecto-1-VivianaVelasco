@@ -1,0 +1,24 @@
+:root{
+    --color-1: #d4a373;
+    --color-2: #7E875F;
+    --color-3: #FEFAE0;
+    --color-4: #E9EDC9;
+    --color-5: #FAEDCD;
+}
+
+
+div > div > nav{
+background-color: var(--color-1);
+margin: 11px;
+padding: auto;
+}
+
+li.nav-item{
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+li.nav-item a:hover{
+    color:var(--color-2);
+}
+
