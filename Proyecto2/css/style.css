@@ -1,56 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&family=Roboto:wght@300;400&display=swap');
-
-*{
-font-family: 'Roboto', sans-serif;
-}
-:root{
-    --color-1: #FFC300;
-    --color-2: #000814;
-    --color-3: #003566;
-    --color-4: #001D3D;
-    --color-5: #FFD60A;
-    --color-6: #ededed;
-
+:root {
+  --color-1: #ffc300;
+  --color-2: #000814;
+  --color-3: #003566;
+  --color-4: #001d3d;
+  --color-5: #ffd60a;
+  --color-6: #ededed;
 }
 
-nav{
-    background-color: #FFC300;
+nav > div > span > p {
+  color: var(--color-2);
 }
 
-body{
-    background-color: var(--color-3);
-}
-nav > div > span > p{
-    color: var(--color-2);
-}
-
-h3{
-    color: var(--color-6);
+h3 {
+  color: var(--color-6);
 }
 .bg-gray {
   background-color: #e7e8eb;
 }
 
 .imagen {
-    height: 3.2rem;
-    width: 3.2rem;
-    border-radius: 25%;
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 25%;
 }
 
 .bg-bl {
-    background-color: #FFF;
+  background-color: #fff;
 }
 
 .color-red {
-    color: #dc3545;
+  color: #dc3545;
 }
 
 .color-green {
-    color: 198754;
+  color: #198754;
 }
 
 .ocultar {
-    display: none;
-    opacity: 0.1;
+  display: none;
+  opacity: 0.1;
 }
