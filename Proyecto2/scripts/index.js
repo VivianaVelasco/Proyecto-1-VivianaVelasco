@@ -8,6 +8,7 @@ function cargarDatos() {
         document.querySelector("#cuadro2").textContent = coins.filter(coin => coin.ath_change_percentage > 0).length 
         document.querySelector("#cuadro3").textContent = coins.filter(coin => coin.ath_change_percentage < 0).length 
         document.querySelector("#cuadro4").textContent = `$ ${precio_total.reduce((acu, sum) => acu + sum).toString().substring(0,10)}`
+        document.querySelector("#volumen").textContent = coins.map(coin => coin.total_volume).reduce((acu, sum) => acu + sum).toString()
 
         //michart1
 

@@ -26,6 +26,7 @@
       href="assets/images/favicon.svg"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -95,9 +96,9 @@
           <div class="page-title">
             <div class="row">
               <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>Photo Gallery</h3>
+                <h3 class="text-black">Buscador CrytoMonedas</h3>
                 <p class="text-subtitle text-muted">
-                  An application for user to check Gallery inbox
+                  Buscar cualquier CryptoMoneda
                 </p>
               </div>
               <div class="col-12 col-md-6 order-md-2 order-first">
@@ -110,7 +111,7 @@
                       <a href="index.html">Dashboard</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Photo Gallery
+                      Buscador CrytoMonedas
                     </li>
                   </ol>
                 </nav>
@@ -118,17 +119,32 @@
             </div>
           </div>
           <section class="section">
+            <div class="mt-4 container-fluid">
+              <h3 class="text-center fs-2 text-black">Busca un CriptoMoneda</h3>
+              <div class="container-sm">
+                <div class="form-floating mb-3">
+                  <input
+                    id="user_input"
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Ingresa un moneda: </label>
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col-12">
                 <div class="card">
-                  <div class="card-header">
-                    <h5 class="card-title">Coming Soon!</h5>
-                  </div>
-                  <div class="card-body">
-                    If you want to contribute. Check out this
-                    <a href="https://github.com/zuramai/mazer" target="_blank"
-                      >template repository</a
-                    >.
+                  <div class="container mt-5">
+                    <h2 class="fs-1 my-4 text-center text-black">Resultados</h2>
+                    <div
+                      id="monedas"
+                      class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-auto justify-content-center gap-3 mb-4"
+                    >
+
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,8 +167,10 @@
         </footer>
       </div>
     </div>
-    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+
+    <script src="scripts/buscador.js"></script>
 
     <script src="assets/js/main.js"></script>
   </body>
