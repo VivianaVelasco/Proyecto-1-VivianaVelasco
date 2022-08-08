@@ -1,3 +1,7 @@
+h3{
+    font-weight: bolder;
+    font-size: 20px;
+}
 .icono {
     font-size: 100px;
     height: 143px;
@@ -11,8 +15,8 @@
 }
 
 .icono2 {
-    font-size: 20px;
-    height: 20px;
-    width: 20px;
+    font-size: 25px;
+    height: 25px;
+    width: 25px;
     color: #9F5C64;
 }

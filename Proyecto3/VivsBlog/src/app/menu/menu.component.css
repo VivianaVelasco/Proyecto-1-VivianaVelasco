@@ -1,3 +1,4 @@
+
 .icono {
     font-size: 100px;
     height: 143px;
@@ -8,6 +9,7 @@
     font-size: 50px;
     height: 45px;
     width: 40px;
+    color: #9F5C64;
 }
 
 .icono2 {
@@ -15,4 +17,12 @@
     height: 30px;
     width: 30px;
     color: #9F5C64;
+}
+h4{
+    color: #9F5C64;
+}
+p{
+    color: #050343;
+    text-decoration: underline;
+
 }
