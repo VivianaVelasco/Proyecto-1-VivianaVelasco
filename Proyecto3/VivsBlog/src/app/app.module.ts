@@ -12,13 +12,19 @@ import { environment } from '../environments/environment';
 import { HeaderComponent } from './header/header.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { MenuComponent } from './menu/menu.component';
+import { CategoriasComponent } from './categorias/categorias.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     RegistrarComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    MenuComponent,
+    CategoriasComponent
   ],
   imports: [
     BrowserModule,
